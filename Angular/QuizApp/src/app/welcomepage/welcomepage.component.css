@@ -1,0 +1,39 @@
+.welcome-box{
+   
+   display: flex;
+   justify-content: center;
+}
+
+.welcome_container{
+    background-color: aliceblue;
+    width: 50%;
+    padding: 20px;
+   
+
+    line-height: 40px;
+}
+
+.welcome_container h2,p{
+    text-align: center;  
+}
+.welcome_container h4{
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+.welcome_container li{
+    line-height: 25px;
+}
+
+button{
+    margin-top: 20px;
+
+}
+.start-btn{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(25, 25, 244);
+    cursor: pointer;
+}
+

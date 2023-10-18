@@ -1,0 +1,48 @@
+<div class="question-container">
+   
+    <div class="question-header">
+        <div class="logo"><img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/640px-JavaScript-logo.png"
+                alt="jslogo"></div>
+        <div class="subheading">Javascript Quiz</div>
+    </div>
+    <hr>
+
+   <ng-container *ngIf="!isQuizEnded">
+    <div class="question-sub-header">
+        <div class="score">{{points}} Points</div>
+        <div class="question-remain">Question {{currentquestion+1}} of {{questionsList.length}}</div>
+        
+    </div>
+    <hr>
+    <div class="questions">
+        <div class="cardd" style="font-size: 20px;"><b>{{questionsList[currentquestion]?.questionText}}</b></div>
+    </div>
+
+    <div class="options">
+        <ol *ngFor="let option of questionsList[currentquestion]?.options">
+            <li (click)="answer(currentquestion+1,option)">
+                <div appChangeBgColor [isCorrect]="option.correct" class="cardd">
+                    {{option.text}}
+                </div>
+            </li>
+        </ol>
+    </div>
+
+    <div class="footer-btn">
+
+        <div><button (click)="resetquiz()">Reset</button></div>
+        <div><button [disabled]="currentquestion!==10">Submit</button></div>
+
+    </div>
+   </ng-container>
+
+   <ng-container *ngIf="isQuizEnded">
+    <div class="submit-container">
+        <p>You have reached at the end of the quiz. <br>
+        Now click on submit to know your performance.</p>
+        <button (click)="setData()" routerLink="/result">Submit</button>
+    </div>
+   </ng-container> 
+  
+</div>

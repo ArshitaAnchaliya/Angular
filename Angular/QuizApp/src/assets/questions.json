@@ -1,0 +1,187 @@
+{
+    "questions": [
+        {
+            "questionText": "Inside which HTML element do we put the JavaScript?",
+            "options": [
+                {
+                    "text": "<javascript>"
+                },
+                {
+                    "text": "<js>"
+                },
+                {
+                    "text": "<script>",
+                    "correct": true
+                },
+                {
+                    "text": "<src>"
+                }
+            ]
+        },
+        {
+            "questionText": "Is it necessary for the external script file to contain a <script> tag?",
+            "options": [
+                {
+                    "text": "yes"
+                },
+                {
+                    "text": "no",
+                    "correct": true
+                },
+                {
+                    "text": "depends on type of include"
+                },
+                {
+                    "text": "none of above"
+                }
+            ]
+        },
+        {
+            "questionText": "What is the correct JavaScript syntax to change the content of the HTML element below?<p id='demo'>This is a demonstration.</p>",
+            "options": [
+                {
+                    "text": "document.getElementById('demo').innerHTML='Hello';",
+                    "correct": true
+                },
+                {
+                    "text": "document.getElementByid('demo').innerHTML='Hello';"
+                },
+                {
+                    "text": "document.getElementbyId('demo').innerHTML='Hello';"
+                },
+                {
+                    "text": "document.getElement('p').innerHTML='Hello';"
+                }
+            ]
+        },
+        {
+            "questionText": "What is the correct syntax for referring to an external script called 'xxx.js'?",
+            "options": [
+                {
+                    "text": "<script href='xxx.js'>"
+                },
+                {
+                    "text": "<script src='xxx.js'>",
+                    "correct": true
+                },
+                {
+                    "text": "<script name='xxx.js'>"
+                },
+                {
+                    "text": "<link src='xxx.js>"
+                }
+            ]
+        },
+        {
+            "questionText": "How many ways are there with which we can declare a variable in javascript?",
+            "options": [
+                {
+                    "text": "only one"
+                },
+                {
+                    "text": "infinitely many"
+                },
+                {
+                    "text": "three",
+                    "correct": true
+                },
+                {
+                    "text": "two"
+                }
+            ]
+        },
+        {
+            "questionText": "Is a variable named 'apple' same as 'Apple' in javascript?",
+            "options": [
+                {
+                    "text": "yes"
+                },
+                {
+                    "text": "no",
+                    "correct": true
+                },
+                {
+                    "text": "can't be said"
+                },
+                {
+                    "text": "none"
+                }
+            ]
+        },
+        {
+            "questionText": "Which of the following variable names are correct according to javascript?",
+            "options": [
+                {
+                    "text": "let $_name;",
+                    "correct": true
+                },
+                {
+                    "text": "let _name;",
+                    "correct": true
+                },
+                {
+                    "text": "let #name;"
+                },
+                {
+                    "text": "let 1name;"
+                }
+            ],
+            "explanation": "the export keyword allows for the information to be transmitted between files"
+        },
+        {
+            "questionText": "What will be the output of the following code snippet let quiz = ”JsQuiz” console.log(quiz.charAt(4))",
+            "options": [
+                {
+                    "text": "i",
+                    "correct": true
+                },
+                {
+                    "text": "z"
+                },
+                {
+                    "text": "Q"
+                },
+                {
+                    "text": "u"
+                }
+            ]
+        },
+        {
+            "questionText": "What is the role of continue keyword inside a loop",
+            "options": [
+                {
+                    "text": "break out of the loop"
+                },
+                {
+                    "text": "restart the loop"
+                },
+                {
+                    "text": "ignore the rest of the statements below it and continue the loop",
+                    "correct": true
+                },
+                {
+                    "text": "move out of loop"
+                }
+            ]
+        },
+
+        {
+            "questionText": "What will be the output of the following code snippet let data=7 while(data>=0) { if(data<=5) { data--; continue; } console.log(data); data--; }",
+            "options": [
+                {
+                    "text": "7 6 5 4 3 2 1 0"
+                },
+                {
+                    "text": "7 6 5"
+                },
+                {
+                    "text": "7 6",
+                    "correct": true
+                },
+                {
+                    "text": "0 1 2 3 4 5"
+                }
+            ]
+        }
+    ]
+}
